@@ -1,0 +1,233 @@
+{
+    "project": {},
+    "files": {
+        "src\\app.js": {
+            "name": "src\\app.js",
+            "modules": {
+                "js_microservice_skeleton": 1
+            },
+            "classes": {
+                "AppClass": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\pactProviderTests.spec.js": {
+            "name": "src\\pactProviderTests.spec.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\stubbedController.js": {
+            "name": "src\\stubbedController.js",
+            "modules": {},
+            "classes": {
+                "StubbedController": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "js_microservice_skeleton": {
+            "name": "js_microservice_skeleton",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "AppClass": 1,
+                "StubbedController": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\stubbedController.js",
+            "line": 10,
+            "static": 1
+        }
+    },
+    "classes": {
+        "AppClass": {
+            "name": "AppClass",
+            "shortname": "AppClass",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "js_microservice_skeleton",
+            "namespace": "",
+            "file": "src\\app.js",
+            "line": 19
+        },
+        "StubbedController": {
+            "name": "StubbedController",
+            "shortname": "StubbedController",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "js_microservice_skeleton",
+            "namespace": "",
+            "file": "src\\stubbedController.js",
+            "line": 10
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\app.js",
+            "line": 25,
+            "itemtype": "method",
+            "name": "start",
+            "description": "start an app base on a given port.",
+            "params": [
+                {
+                    "name": "port",
+                    "description": "- Provide port number.",
+                    "type": "Int"
+                }
+            ],
+            "return": {
+                "description": "- A promise that pass deployment slot key returns a REST web services if resolved.",
+                "type": "Promise"
+            },
+            "class": "AppClass",
+            "module": "js_microservice_skeleton"
+        },
+        {
+            "file": "src\\pactProviderTests.spec.js",
+            "line": 14,
+            "description": "Building Options for pactServer.",
+            "itemtype": "method",
+            "name": "buildOpts",
+            "params": [
+                {
+                    "name": "pactLinks",
+                    "description": "- Defines url for pact links.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "- A promise that returns a data object if resolved, or an Error if rejected.",
+                "type": "Promise"
+            },
+            "class": "StubbedController",
+            "module": "js_microservice_skeleton"
+        },
+        {
+            "file": "src\\pactProviderTests.spec.js",
+            "line": 31,
+            "description": "Get latest pact links.",
+            "itemtype": "method",
+            "name": "getLinks",
+            "return": {
+                "description": "- A promise that returns an array of pact links if resolved, or an Error if rejected.",
+                "type": "Promise"
+            },
+            "class": "StubbedController",
+            "module": "js_microservice_skeleton"
+        },
+        {
+            "file": "src\\stubbedController.js",
+            "line": 18,
+            "description": "Get a record by id.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "- Defines the id.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "- A promise that returns a data object if resolved, or an Error if rejected.",
+                "type": "Promise"
+            },
+            "class": "StubbedController",
+            "module": "js_microservice_skeleton"
+        },
+        {
+            "file": "src\\stubbedController.js",
+            "line": 58,
+            "description": "Create a record by input params.",
+            "itemtype": "method",
+            "name": "create",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "- Defines the id.",
+                    "type": "String"
+                },
+                {
+                    "name": "msg",
+                    "description": "- Defines the message.",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\n         create('1234', 'user defined msg')"
+            ],
+            "return": {
+                "description": "- A promise that returns a data object if resolved, or an Error if rejected.",
+                "type": "Promise"
+            },
+            "class": "StubbedController",
+            "module": "js_microservice_skeleton"
+        },
+        {
+            "file": "src\\stubbedController.js",
+            "line": 101,
+            "description": "Update context of an existing record.",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "- Defines the id.",
+                    "type": "String"
+                },
+                {
+                    "name": "msg",
+                    "description": "- Defines the message.",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\n      update('1234', 'user defined msg')"
+            ],
+            "return": {
+                "description": "- A promise that returns a data object if resolved, or an Error if rejected.",
+                "type": "Promise"
+            },
+            "class": "StubbedController",
+            "module": "js_microservice_skeleton"
+        },
+        {
+            "file": "src\\stubbedController.js",
+            "line": 144,
+            "description": "Delete record by id.",
+            "itemtype": "method",
+            "name": "delete",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "- Defines the id.",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\n         delete('1234')"
+            ],
+            "return": {
+                "description": "- A promise that returns a data object if resolved, or an Error if rejected.",
+                "type": "Promise"
+            },
+            "class": "StubbedController",
+            "module": "js_microservice_skeleton"
+        }
+    ],
+    "warnings": []
+}
